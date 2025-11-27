@@ -1,41 +1,23 @@
 :root {
-  /* Modern Color Palette */
   --primary-color: #4f46e5;
-  /* Indigo 600 */
   --primary-hover: #4338ca;
-  /* Indigo 700 */
   --secondary-color: #64748b;
-  /* Slate 500 */
   --secondary-hover: #475569;
-  /* Slate 600 */
   --success-color: #10b981;
-  /* Emerald 500 */
   --success-hover: #059669;
-  /* Emerald 600 */
   --danger-color: #ef4444;
-  /* Red 500 */
   --danger-hover: #dc2626;
-  /* Red 600 */
   --warning-color: #f59e0b;
-  /* Amber 500 */
   --warning-hover: #d97706;
-  /* Amber 600 */
   --info-color: #3b82f6;
-  /* Blue 500 */
   --info-hover: #2563eb;
-  /* Blue 600 */
 
   --background-color: #f8fafc;
-  /* Slate 50 */
   --surface-color: #ffffff;
   --text-primary: #1e293b;
-  /* Slate 800 */
   --text-secondary: #64748b;
-  /* Slate 500 */
   --border-color: #e2e8f0;
-  /* Slate 200 */
 
-  /* Spacing & Layout */
   --container-width: 1000px;
   --header-height: 64px;
   --radius-md: 0.5rem;
@@ -58,7 +40,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Typography */
 h1,
 h2,
 h3,
@@ -85,7 +66,6 @@ p {
   color: var(--text-secondary);
 }
 
-/* Layout Utilities */
 .app-container {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -109,7 +89,6 @@ p {
   border: 1px solid var(--border-color);
 }
 
-/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -185,7 +164,6 @@ p {
   background-color: var(--info-hover);
 }
 
-/* Forms */
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -208,7 +186,6 @@ p {
   transition: border-color 0.2s, box-shadow 0.2s;
   font-size: 0.95rem;
   box-sizing: border-box;
-  /* Ensure padding doesn't affect width */
 }
 
 .form-group input:focus {
@@ -224,7 +201,6 @@ p {
   margin-top: 2rem;
 }
 
-/* Table / Data Grid */
 .table-container {
   overflow-x: auto;
   border-radius: var(--radius-lg);
@@ -260,7 +236,6 @@ p {
 
 .student-table tr:hover {
   background-color: #f8fafc;
-  /* Very light slate for hover */
 }
 
 .action-buttons {
@@ -273,7 +248,6 @@ p {
   font-size: 0.75rem;
 }
 
-/* Details View */
 .details-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -296,7 +270,6 @@ p {
   color: var(--text-primary);
 }
 
-/* Empty State */
 .empty-state {
   text-align: center;
   padding: 4rem 2rem;

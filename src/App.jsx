@@ -39,9 +39,6 @@ function App() {
         if (window.confirm('Are you sure you want to delete this student?')) {
             try {
                 await deleteStudent(id);
-                // Ideally we should refresh the list here or remove from local state
-                // For now, we rely on the user clicking "Load Students" or we could auto-reload
-                // Let's auto-reload for better UX if we are in list view
                 const data = await getAllStudents();
                 setStudents(data);
             } catch (error) {
@@ -54,13 +51,10 @@ function App() {
     const handleFormSubmit = async (formData) => {
         try {
             if (selectedStudent) {
-                // Update
                 await updateStudent(selectedStudent.id, formData);
             } else {
-                // Add
                 await addStudent(formData);
             }
-            // Refresh list and go back
             const data = await getAllStudents();
             setStudents(data);
             setCurrentView('list');
